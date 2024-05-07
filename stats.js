@@ -11,6 +11,9 @@ if (fs.existsSync(outputFile)) { // check for existing output file
 const data = fs.readFileSync(inputFile, "utf-8");
 const lines = data.split(/\n/);
 
+console.log(data, '<---- data')
+console.log(lines, "<---- lines")
+
 for (line of lines) {
       
       elements = line.split(delimiter);
